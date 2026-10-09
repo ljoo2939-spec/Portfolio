@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    display: grid;
+    flex-direction: column;
+    height: 98vh;
+    width: 600px;
+
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+}
+
+.Principal_h1 {
+    color: white;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.div-Principal_h1 {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: -2.5px;
+    position: relative;
+    width: max-content;
+}
+
+.div-Principal_h1::after {
+    content: "";
+    position: absolute;
+    right: -40px;
+    top: -30px;
+    width: 11px;
+    height: 103vh;
+    background-color: white;
+}
+
+.Subir_Principal_h1 {
+    display: inline-block;
+    transition: all 0.17s ease;
+}
+
+.Subir_Principal_h1:hover {
+    transform: translateY(-13px);
+    color: blue;
+}
+
+#pulo {
+    padding-right: 8px;
+}
+
+#Lugar_escrever {
+    position: fixed;
+    right: 15%;
+    bottom: 7%;
+}
+
+.campo-escrever {
+    width: 400px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#Telefone {
+    position: fixed;
+    color: white;
+    font-size: 18px;
+    right: 21.5%;
+    top: 92%;
+}
+
+#resultado {
+    position: fixed;
+    top: 15%;
+    left: 45%;
+    width: 45%;
+    color: white;
+    font-size: 25px;
+    line-height: 1.6;
+    white-space: pre-line;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+#João_Lucas{
+    position: absolute;
+    top: 6%;
+    right: 14%;
+    color: white;
+    font-size: 85px;
+    text-decoration: underline;
+    letter-spacing: 3px;
+}
+#contato {
+    position: fixed;
+    top: 12%;
+    left: 45%;
+    width: 45%;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#contato h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+#form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#form-contato label {
+    font-size: 17px;
+}
+
+#email,
+#mensagem {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    border: 1px solid #555;
+    border-radius: 12px;
+    background-color: #171717;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+#mensagem {
+    height: 220px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+}
+
+#email:focus,
+#mensagem:focus {
+    border-color: white;
+}
+
+#form-contato button {
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form-contato button:hover {
+    background-color: #cccccc;
+}
